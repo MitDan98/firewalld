@@ -14,7 +14,7 @@ exit 1
 fi
  
 sudo firewall-cmd --permanent --zone=public --add-service=https
-iif($? -ne 0); then
+if($? -ne 0); then
  echo "This service was added already"
  exit 1
 
