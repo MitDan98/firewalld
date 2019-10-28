@@ -9,7 +9,7 @@ if($? -ne 0); then
  exit 1
 
 else 
-echo"Was added with succes"
+echo "Was added with succes"
 exit 1
 fi
  
@@ -28,6 +28,6 @@ if($? -ne 0); then
  exit 1
 
 else 
-echo"This port was open with succes!"
+echo "This port was open with succes!"
 exit 1
 fi
