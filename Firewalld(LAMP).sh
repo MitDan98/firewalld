@@ -5,7 +5,7 @@
 #LAMP hint 1
 sudo firewall-cmd --permanent --zone=public --add-service=http
 if($? -ne 0); then
- echo "This service was added"
+ echo "This service was added already"
  exit 1
 
 else 
@@ -15,7 +15,7 @@ fi
  
 sudo firewall-cmd --permanent --zone=public --add-service=https
 iif($? -ne 0); then
- echo "This service was added"
+ echo "This service was added already"
  exit 1
 
 else 
