@@ -8,7 +8,7 @@ if($? -ne 0); then
  echo "Was added with succes"
  exit 1
 
-elif 
+else 
 echo"Error!"
 exit 1
 fi
@@ -18,7 +18,7 @@ if($? -ne 0); then
  echo "Was added with succes"
  exit 1
 
-elif 
+else 
 echo"Error!"
 exit 1
 fi
@@ -27,7 +27,7 @@ if($? -ne 0); then
  echo "Was added port with succes"
  exit 1
 
-elif 
+else 
 echo"Error!"
 exit 1
 fi
