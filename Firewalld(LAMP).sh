@@ -19,7 +19,7 @@ if($? -ne 0); then
  exit 1
 
 else 
-echo"Was added with succes"
+echo "Was added with succes"
 exit 1
 fi
 sudo firewall-cmd --zone=public --permanent --add-port=80
