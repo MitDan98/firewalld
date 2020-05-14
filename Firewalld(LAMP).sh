@@ -25,7 +25,16 @@ sudo firewall-cmd --zone=public --permanent --add-port=80
 if [ $? -ne 0 ]; then
  echo "this port was open already "
  exit 1
-
+ 
 else 
 echo "This port was open with succes!"
 fi
+sudo systemctl restart network.service
+ if [ $? -ne 0 ]; then
+ echo "Cannot be restarted "
+ exit 1
+ 
+else 
+echo "restart  with succes!"
+fi
+
