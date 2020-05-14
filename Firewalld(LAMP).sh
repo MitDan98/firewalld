@@ -21,7 +21,7 @@ else
 echo "Was added with succes"
 fi
 
-sudo firewall-cmd --zone=public --permanent --add-port=80
+sudo firewall-cmd --zone=public --permanent --add-port=80/tcp
 if [ $? -ne 0 ]; then
  echo "this port was open already "
  exit 1
